@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!--Up until now, you have been limited regarding the presentation and appearance of the content you create. To start taking control, add a style element within the head element.-->
+    
+     <!--You can add style to an element by specifying it in the style element and setting a property for it like this:
+            element {
+            property: value;
+            }
+         Center your h1 element by setting its text-align property to the value center.-->
+    <!--You now have three type selectors with the exact same styling. You can add the same group of styles to many elements by creating a list of selectors. Each selector is separated with commas like this:-->
+
+    <!--  <style>
+        h1, h2, p {
+            text-align: center;
+        }
+       </style> -->
+
+       <!--you have styled three elements by writing CSS inside the style tags. This works, but since there will be many more styles, it's best to put all the styles in a separate file and link to it.-->
+
+       <!--Now you need to link the styles.css file so the styles will be applied again. Nest a self-closing link element in the head element. Give it a rel attribute value stylesheet and an href attribute value of styles.css.-->
+       <link rel="stylesheet" href="styles.css"/>
+    <title>Cafe Menu</title>
+    <meta charset="UTF-8">
+    <!--For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute. Add the following within the head element:-->
+    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+
+
+</head>
+<body>
+    <!--The div element is used mainly for design layout purposes unlike the other content elements you have used so far. Add a div element inside the body element and then move all the other elements inside the new div.-->
+    <!--To apply the class's styling to the div element, add a class attribute to the div element's opening tag and set its value to menu.-->
+    
+    <div class="menu">
+    <main>
+
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p>
+        <!--You can use an hr element to display a divider between sections of different content. First, add an hr element between the p element with the class established and the first section element. Note that hr elements are self closing.-->
+        <hr>
+        <section>
+            <h2>Coffee</h2>
+            <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
+            <!--It’s looking good. Time to start adding some menu items. Add an empty article element under the Coffee heading. It will contain a flavor and price of each coffee you currently offer.-->
+            <!--That is kind of what you want, but now it would be nice if the flavor and price were on the same line. p elements are block-level elements, so they take up the entire width of their parent element. To get them on the same line, you need to apply some styling to the p elements so they behave more like inline elements. To do that, start by adding a class attribute with the value item to the first article element under the Coffee heading.-->
+            
+            <article class="item">
+                <!--The flavors and prices are currently stacked on top of each other and centered with their respective p elements. It would be nice if the flavor was on the left and the price was on the right. Add the class name flavor to the French Vanilla p element.-->
+                <!--That worked, but there is still a little space on the right of the price. You could keep trying various percentages for the widths. Instead, use the back space key on your keyboard to move the p element with the class price next to the p element with the class flavor so that they are on the same line in the editor. Make sure there is no space between them.-->
+                <!--Now go ahead and change both the flavor and price class' widths to be 50% again.-->
+                <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+              </article>
+              <article class="item">
+                <p>Caramel Macchiato</p>
+                <p>3.75</p>
+              </article>
+              <article class="item">
+                <p>Pumpkin Spice</p>
+                <p>3.50</p>
+              </article>
+              <article class="item">
+                <p>Hazelnut</p>
+                <p>4.00</p>
+              </article>
+              <article class="item">
+                <p>Mocha</p>
+                <p>4.50</p>
+              </article>
+
+
+        </section>
+        <section>
+            <h2>Desserts</h2>
+            <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+              <article class="item">
+                <p class="dessert">Donut</p><p class="price">1.50</p>
+              </article>
+              <article class="item">
+                <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+              </article>
+              <article class="item">
+                <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+              </article>
+              <article class="item">
+                <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+              </article>
+        </section>
+    </main>
+    <hr class="bottom-line">
+    <footer>
+      <p><a target="_blank" href= "https://github.com/itsVaibhavSharma/FULL-STACK-BASICS-AND-PROJECTS">Visit our website</a></p>
+      <p class="address">Project by <a target="_blank" href="https://github.com/itsVaibhavSharma">@itsVaibhavSharma</a></p>
+    </footer>
+    </div>
+
+</body>
+</html>
