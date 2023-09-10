@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="UTF-8">
+  <meta target="viewport" width="device-width" initial-width="1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description" class="desc">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+<fieldset name="f1">
+  <label  id="name-label" for="name">Name<input required id="name" type="text" placeholder="Enter your name" /></label>
+  <label id="email-label" for="email">Email<input required id="email" type="email" placeholder="Enter your Email" /></label>
+  <label id="number-label" for="number" >Age <p class="p2">(optional)</p><input id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+  <label for="dropdown">Which option best describes your current role?<select required id="dropdown">
+  <option disabled="disabled" value="" selected="true" >Select current role</option>
+  <option value="o2" name="o2">Student</option>
+  <option value="o3" name="o3">Full time job</option>
+  <option value="o4" name="o4">Full time learner</option>
+  <option value="o5" name="o5">Prefer not to say</option>
+   <option value="6" name="6">Other</option>
+</select>
+  </label>
+
+</fieldset>
+<fieldset name="f2">
+  <label for="radiobuttons">Would you recommend our page to a friend?
+    <label for="radiobuttons1"><input id="radiobuttons1" name="radiobuttons" value="radiobutton1"type="radio" class="inline"></input>Definitely</label>
+        <label for="radiobuttons2"><input id="radiobuttons2" name="radiobuttons" type="radio" class="inline" value="radiobutton2" ></input>Maybe</label>
+            <label for="radiobuttons3"><input id="radiobuttons3" name="radiobuttons" value="radiobutton3" type="radio" class="inline"></input>Not sure</label>
+     </label>
+</fieldset>
+<fieldset name="f3">
+  <label id="fav-label" name="fav-label" for="fav-dropdown">
+What is your favorite feature of our Page?
+<select id="fav-dropdown" name="fav-dropdown">
+  <option disabled="disabled" value="" selected="true" >select an option</option>
+   <option value="fo2">Challenges</option>
+    <option value="fo3">Proejects</option>
+     <option value="fo4">Community</option>
+      <option value="fo5">Open source</option>
+  
+  </select>
+    </label>
+</fieldset>
+<fieldset name="f4">
+  <label id="checkbox-label">What would you like to see improved? <p class="p2">(Check all that apply)</p></label>
+<label for="cb1"><input id="cb1" value="cb1" type="checkbox"></input>Front-end Projects</label>
+<label for="cb2"><input id="cb2" value="cb2" type="checkbox"></input>Back-end Projects</label>
+<label for="cb3"><input id="cb3" value="cb3" type="checkbox"></input>Data Visualization</label>
+<label for="cb4"><input id="cb4" value="cb4" type="checkbox"></input>Challenges</label>
+<label for="cb5"><input id="cb5" value="cb5" type="checkbox"></input>Open Source Community</label>
+<label for="cb6"><input id="cb6" value="cb6" type="checkbox"></input>Gitter help rooms</label>
+<label for="cb7"><input id="cb7" value="cb7" type="checkbox"></input>Videos</label>
+<label for="cb8"><input id="cb8" value="cb8" type="checkbox"></input>City Meetups</label>
+<label for="cb9"><input id="cb9" value="cb9" type="checkbox"></input>Wiki</label>
+<label for="cb10"><input id="cb10" value="cb10" type="checkbox"></input>Forum</label>
+<label for="cb11"><input id="cb11" value="cb11" type="checkbox"></input>Additional Courses</label>
+    
+</fieldset>
+<fieldset name="f5">
+
+<label for="textarea"id="textarea-label">Any comments or suggestions?
+  <textarea id="textarea" placeholder="Enter your comments here..." rows="6" cols="40"></textarea>
+</label>
+
+</fieldset>
+<div class="div">
+<button type="Submit" name="Submit" id="submit" action="Submit">Submit</button>
+</div>
+</form>
+
+<div class="foot">
+        <footer>
+            <p>Project by <a name="foot" target="_blank" href="https://github.com/itsVaibhavSharma/">@itsVaibhavSharma</a></p>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
